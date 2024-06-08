@@ -1,5 +1,3 @@
-#include <iostream>
-#include <cstring>
 #include 'Results.h'
 #include 'ResultEntry.h'
 

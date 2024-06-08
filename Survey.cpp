@@ -1,5 +1,3 @@
-#include <iostream>
-#include <cstring>
 #include 'Survey.h'
 
 // loads questions array based off surveyType;

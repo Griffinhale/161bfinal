@@ -1,6 +1,9 @@
 #ifndef RESULTS_H
 #define RESULTS_H
 
+#include <iostream>
+#include <cstring>
+
 // data structure
 struct Results{
 	ResultsEntry data[];

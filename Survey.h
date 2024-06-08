@@ -1,6 +1,9 @@
 #ifndef SURVEY_H
 #define SURVEY_H
 
+#include <iostream>
+#include <cstring>
+
 struct Survey{
 	enum int surveyType; 
 	char questions[20][1000];

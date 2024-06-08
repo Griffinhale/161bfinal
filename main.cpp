@@ -18,16 +18,17 @@
 
 #include <iostream>
 #include "Utils.h"
-#include "Survey.h"
-#include "Results.h"
-#include "ResultsEntry.h"
-#include "User.h"
+//#include "Survey.h"
+//#include "Results.h"
+//#include "ResultsEntry.h"
+//#include "User.h"
 
 using namespace std;
 
-void main(){
-	banner();
-	displayMenu(1);
-
-	return 0;
+int main(){
+    system("cls");
+    banner();
+    displayMenu(MENUS::mainMenu);
+    banner();
+    return 0;
 }

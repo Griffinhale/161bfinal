@@ -1,6 +1,10 @@
 #ifndef RESULTS_ENTRY_H
 #define RESULTS_ENTRY_H
 
+#include <iostream>
+#include <cmath>
+#include <cstring>
+
 struct ResultsEntry{
 	double socScore;
 	double physScore;

@@ -1,6 +1,3 @@
-#include <iostream>
-#include <cstring>
-#include <ctime>
 #include 'ResultsEntry.h'
 
 // inserts resultsEntry into results

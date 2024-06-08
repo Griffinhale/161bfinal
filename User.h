@@ -1,6 +1,11 @@
 #ifndef USER_H
 #define USER_H
 
+#include <iostream>
+#include <cstring>
+#include <ctime>
+#include <fstream>
+
 struct User{
 	char username[25];
 	int pin;
@@ -9,11 +14,18 @@ struct User{
 	bool encrypted = false;
 };
 
+enum LOGIN_OPT{
+    normal = 1,
+    guest = 2,
+    sample = 4
+};
 
 
 // initializs new user, inits dateCreated/Refreshed and stores user/pin
-void createUser(char username[], int pin);
+User createUser();
 
+// reads login details
+void getLoginDetails(char username[], int& pin);
 
 // Removes all date associated with user
 void deleteUser(User& user, int pinCheck);
@@ -27,7 +39,7 @@ void resetUser(User& user, int pinCheck);
 void changePassword(int& currentPin, int newPin);
 
 // initialized program memory with user's data file
-void logIn(char username[], int pin);
+User logIn(LOGIN_OPT login_opt = LOGIN_OPT::normal);
 
 
 // removes user's data file from program memory
